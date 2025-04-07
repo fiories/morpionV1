@@ -1,4 +1,27 @@
-.a,.b,.c{
-    height: 200px;
-    width:200px;
+body{
+    display:flex;
+    flex-direction: row;
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    width: 150px; 
+    margin: 0px 20px;      
+}
+#buttonRestart{
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+}
+.AA{
+    height: 100px;
+    width:100px;
 }

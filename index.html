@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
-</head>
-<body>
-    <button id="A0" class="AA d a g"onclick="myFunction(0)"></button>
-    <button id="A1" class="AA e a" onclick="myFunction(1)"></button>
-    <button id="A2" class="AA f a h" onclick="myFunction(2)"></button> <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morpion</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div id="morpion">
+      <button id="A0" class="AA d a g" onclick="myFunction(0)"></button>
+      <button id="A1" class="AA e a" onclick="myFunction(1)"></button>
+      <button id="A2" class="AA f a h" onclick="myFunction(2)"></button> <br />
 
-    <button id="A3" class="AA d b" onclick="myFunction(3)"></button>
-    <button id="A4" class="AA e b g h" onclick="myFunction(4)"></button>
-    <button id="A5" class="AA f b" onclick="myFunction(5)"></button> <br>
+      <button id="A3" class="AA d b" onclick="myFunction(3)"></button>
+      <button id="A4" class="AA e b g h" onclick="myFunction(4)"></button>
+      <button id="A5" class="AA f b" onclick="myFunction(5)"></button> <br />
 
-    <button id="A6" class="AA d c h" onclick="myFunction(6)"></button>
-    <button id="A7" class="AA e c" onclick="myFunction(7)"></button>
-    <button id="A8" class="AA f c g" onclick="myFunction(8)"></button> <br>
-
-    <button onclick="restart()"> reStart</button>
-    <button onclick="facile()"> facile</button>
+      <button id="A6" class="AA d c h" onclick="myFunction(6)"></button>
+      <button id="A7" class="AA e c" onclick="myFunction(7)"></button>
+      <button id="A8" class="AA f c g" onclick="myFunction(8)"></button> <br />
+    </div>
+    <div id="options">
+      <button id="buttonRestart" onclick="restart()">reStart</button>
+     
     
-            
+      <fieldset>
+        <legend>difficulté</legend>
+      <div id="idDificulte" >
+        <input type="radio" name="radioDificulte" value="facile" />facile<br>
+        <input type="radio" name="radioDificulte" value="moyen" /> moyen<br>
+        <input type="radio" name="radioDificulte" value="difficile" />a faire
+      </div>
+      </fieldset>
+      <fieldset>
+        <legend>taille d'affichage</legend>
+      <div id="idTailleDaffichage" >
+        <input type="radio" name="radioTailleDaffichage" value="petit" />petit<br>
+        <input type="radio" name="radioTailleDaffichage" value="moyen" /> moyen<br>
+        <input type="radio" name="radioTailleDaffichage" value="grand" />grand
+      </div>
+      </fieldset>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="option.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
